@@ -17,7 +17,7 @@
 <body> <!-- onload="init();">-->
 <body> <!-- onload="init();">-->
 <div align="center">
-  <h1>SBDCodec: Decoupling Speech and Background-sound in Codec To Allow Explicit Feature Selections for Downstream Audio Tasks.</h1>
+  <h1>De-Codec: Decoupling Speech and Background-sound in Codec To Allow Explicit Feature Selections for Downstream Audio Tasks.</h1>
 </div>
 <!--
 <div align="center">
@@ -32,7 +32,7 @@
   <h2>Abstract</h2>
 </div>
 <div>
-  <p>Recently, unifying various audio tasks into a generic framework for processing multiple audio tasks has become a trend. However, different audio tasks focus on features derived from distinct audio components. Therefore, this paper proposes SBDCodec, a codec method that decouples speech and background-sound tokens during the tokenization of input audio, enabling downstream audio tasks to explicitly select efficient input tokens. To achieve complete decoupling, we design a dual-path quantization block inserted into an encoder-decoder network for the independent vector quantization of speech and background sound. Moreover, we propose a token swapping training method, which replaces the background-sound tokens of the input audio and supervises the SBDCodec to reconstruct the input speech with the replaced background-sound. Moreover, we implement the SBDCodec on speech denoising and background-sound replacement tasks.</p>
+  <p>This paper proposes De-Codec, a codec method that decouples speech and background-sound (BGS) tokens during the tokenization of input audio, enabling downstream audio tasks to explicitly select efficient input tokens. To achieve complete decoupling, we design a dual-path quantization block inserted into an encoder-decoder network for the independent vector quantization of speech and background sound. Moreover, we propose a token swapping training method, which replaces the BGS tokens of the input audio and supervises the De-Codec to reconstruct the input speech with the replaced background-sound. The experimental results demonstrate that the proposed De-Codec can achieve complete decoupling of speech and BGS tokens while maintaining audio reconstruction performance. Moreover, we implement the De-Codec on speech denoising and background-sound replacement tasks, verifying the efficiency of the decoupled tokens for downstream audio tasks.</p>
 </div>
 
 <div align="center">
